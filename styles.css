@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #add8e6;
+    background-image: url('https://img.elo7.com.br/product/zoom/4A2F8DC/painel-festa-lona-cha-revelacao-aquarela-ursinhos-200x150cm-lona-festa-infantil.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.titulo {
+    font-family: 'Dancing Script', cursive;
+    color: #8B4513;
+    font-size: 2.5em;
+}
+
+.premios {
+    animation: blink 2s infinite;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #8B4513;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.grid button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.grid button:disabled {
+    background-color: #FF6347; /* Cor fixa para números já escolhidos */
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.fancy-button {
+    padding: 10px 20px;
+    background-color: #BC8F8F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.fancy-button:hover {
+    background-color: #A0522D;
+    transform: scale(1.05);
+}
+
+.whatsapp-link {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.whatsapp-link:hover {
+    background-color: #1DA851;
+    transform: scale(1.05);
+}
+
+.agradecimento {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.input-nome {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.images img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Estilização do rodapé */
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    border-top: 2px solid #8B4513;
+}
+
+.footer h2 {
+    font-size: 2em;
+    color: #8B4513;
+    font-family: 'Dancing Script', cursive;
+}
+
+.selected-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.selected-numbers span {
+    font-size: 1.2em;
+    padding: 8px 12px;
+    background-color: #BC8F8F;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #8B4513;
+    transition: transform 0.3s ease;
+}
+
+.selected-numbers span:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    }
+
+    .titulo {
+        font-size: 2em;
+    }
+
+    .fancy-button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .whatsapp-link {
+        font-size: 1.2em;
+    }
+
+    .footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .footer h2 {
+        font-size: 1.8em;
+    }
+
+    .selected-numbers span {
+        font-size: 1em;
+    }
+}
