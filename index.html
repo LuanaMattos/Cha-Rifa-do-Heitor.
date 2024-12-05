@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá Rifa do Heitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Chá Rifa do Heitor</h1>
+        <p>Cada número custa R$30,00. Escolha seus números abaixo:</p>
+        <p class="premios"><strong>Prêmio:</strong></p>
+        <ul class="premios">
+            <li>Um delicioso jantar para duas pessoas no Chimarron ou um PIX de R$ 150,00</li>
+        </ul>
+        <div class="grid">
+            <!-- Números serão inseridos aqui pelo JavaScript -->
+        </div>
+        <div class="form-group">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" class="input-nome">
+        </div>
+        <div class="button-group">
+            <button id="submit" class="fancy-button">Confirmar Escolha</button>
+            <button id="pay" class="fancy-button">Efetuar Pagamento</button>
+        </div>
+        <a id="whatsappLink" href="#" target="_blank" class="whatsapp-link" style="display: none;">Clique aqui para enviar a mensagem no WhatsApp com seu nome e números escolhidos</a>
+        <p class="agradecimento" id="agradecimento"></p>
+
+        <!-- Rodapé para exibir os números escolhidos -->
+        <div class="footer">
+            <h2>Números Escolhidos</h2>
+            <div id="selectedNumbersList" class="selected-numbers">
+                <!-- Aqui aparecerão os números escolhidos -->
+            </div>
+        </div>
+
+        <div class="agradecimento">
+            <p>Muito Obrigado pela Sua Participação!</p>
+            <p>Com o seu apoio, estamos mais próximos de celebrar a chegada do Heitor com todo o carinho que ele merece. Seu gesto de generosidade fará toda a diferença e marcará esse momento tão único.</p>
+            <p>Agora é só torcer para ser um dos sortudos ganhadores! Agradecemos de coração pela sua ajuda e por fazer parte deste lindo evento. Que o Heitor seja rodeado de muito amor e alegria, assim como todos vocês!</p>
+        </div>
+        <div class="images">
+            <img src="https://img.elo7.com.br/product/zoom/4A2F8DC/painel-festa-lona-cha-revelacao-aquarela-ursinhos-200x150cm-lona-festa-infantil.jpg" alt="Imagem de Chá de Fralda" class="background-image">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
